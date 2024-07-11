@@ -1,16 +1,9 @@
-import java.util.Scanner;
-
-/**
- * HelloGoodbye
- */
 public class HelloGoodbye {
-public static void main(String[] args) {
-  Scanner myObj = new Scanner(System.in);
-  String names = myObj.nextLine();
+  public static void main(String[] args) {
+      String name1 = args[0];
+      String name2 = args[1];
 
-  String[] name = names.split(" ");
-
-  System.out.println("Hello " + name[0] + " and " + name[1] + ".");
-  System.out.println("Goodbye " + name[1] + " and " + name[0] + ".");
-}
+      System.out.println("Hello " + name1 + " and " + name2 + ".");
+      System.out.println("Goodbye " + name2 + " and " + name1 + ".");
+  }
 }
